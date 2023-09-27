@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js">
+        </script>
+</head>
+<body>
+    <div class="container" id="container-todo">
+    <div class="form-center" id="form-1">
+        <h1>+Add To Do</h1>
+        <label for="todo"></label>
+        <input type="text" placeholder="Add your activity" name="todo" required>
+
+        <button type="submit" id="button-start">Start</button>
+        <button type="submit" id="button-end">End</button>
+
+        <button onclick="closeForm()" type="submit" id="button-close">X</button>
+    </div>
+
+    </div>
+    <div class="container" id="table-todo">
+        <h5>My To Do List</h5>
+    <table class="center-table">
+        <button onclick="openForm()" class="button-todo" id="button-todo" type="submit">+Add Todo</button>
+        <tr>
+            <th>#</th>
+            <th>Todo</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Duration</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
